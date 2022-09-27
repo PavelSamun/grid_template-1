@@ -1,0 +1,9 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.btn {
+  width: 250px;
+  height: 60px;
+  background-color: rgba($color-light, 0.1);
+  border: 2px solid #ffffff;
+}
