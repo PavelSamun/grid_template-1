@@ -12,4 +12,13 @@
   justify-content: center;
   font-size: 1.125rem;
   letter-spacing: 0.1em;
+  transition: background-color 0.5s;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+}
+.visually-hidden {
+  @include visually-hidden;
 }
