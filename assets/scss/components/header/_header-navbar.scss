@@ -7,7 +7,7 @@
   justify-items: end;
 
   &__btn {
-    display: none;
+    // display: none;
   }
 
   &__list {
@@ -38,4 +38,63 @@
       color: $color-accent;
     }
   }
+}
+
+
+
+
+
+.header-navbar__btn {
+  width: 30px;
+  height: 22.5px;
+  position: relative;
+  margin: 25px auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.header-navbar__btn-row {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: $color-light;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.header-navbar__btn-row:nth-child(1) {
+  top: 0px;
+}
+
+.header-navbar__btn-row:nth-child(2),.header-navbar__btn-row:nth-child(3) {
+  top: 9px;
+}
+
+.header-navbar__btn-row:nth-child(4) {
+  top: 18px;
+}
+
+.header-navbar__btn.open span:nth-child(1) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
+.header-navbar__btn.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.header-navbar__btn.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.header-navbar__btn.open span:nth-child(4) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
 }
