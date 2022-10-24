@@ -100,13 +100,16 @@
 
   &__item {
     margin: $gap $gap-sm;
+    @include md-min {
+      margin: 0;
+    }
   }
 
   &__link {
     display: block;
 
     transition: color 0.25s;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.1em;
 
     font-size: 1.125rem;
 
